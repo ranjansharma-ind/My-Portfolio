@@ -1,0 +1,14 @@
+{
+    "Myworks":[
+        {
+            "id":1,
+            "title":"Design",
+            "image":"./Files/images/design.png"
+        },
+        {
+            "id":2,
+            "title":"Develop",
+            "image":"./Files/images/design.png"
+        }
+    ]
+}

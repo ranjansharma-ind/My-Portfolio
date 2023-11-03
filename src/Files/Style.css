@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    font-family: Trebuchet MS;
+    background: linear-gradient(165deg, #41c7b4 54.5%, #ff7c4a 55%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 1rem;
+}
+
+.offcanvas-body .nav-link {
+  color: #fff;
+  font-weight: 100;
+  margin-left: 50px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.offcanvas-body .nav-link.active{
+    background-color: #fff;
+    color: #000;
+}
+
+.offcanvas {
+  height: 50%;
+  padding: 2px;
+  margin: 9px;
+  border-radius: 8.2px;
+  background-color: black;
+  color: #fff;
+}
+.offcanvas-title {
+  font-weight: 100;
+}
+
+.homeImage img {
+  height: 20rem;
+  margin: 70px;
+  border-radius: 5px;
+}
+.homeText {
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+.homeText span{
+    padding: 1px;
+}
+.homeText h1{
+    font-family: Century Gothic;
+    margin-top: -5px;
+    font-weight: 1000;
+}
+.homeText p{
+    letter-spacing: 1.5px;
+}
+.homeText button{
+    text-decoration: none;
+    margin: 3px;
+    padding: 8px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+.homeText button:hover{
+    background-color: #bdb8b8;
+    color: #000;
+}
+
+.whatido h1{
+    text-align: center;
+}
+.whatido .nav button{
+    background-color: none;
+    color: #000;
+    margin: 2px;
+}
+
+.whatido .nav-pills .nav-link.active{
+    background-color:rgb(213, 218, 218);
+    color: #000;
+}
+
+.whatido .row {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.whatido img {
+  height: 400px;
+}
+
+.letstalk{
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.letstalk p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.letstalk span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.letstalk h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 9rem;
+    line-height: 120px;
+    letter-spacing: 20px;
+}
+
+.letstalk .icon i:first-child{
+  font-size: 30px;
+  padding: 10px;
+  background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.letstalk .icon i:last-child{
+  font-size: 30px;
+  padding: 10px;
+  background: -webkit-linear-gradient(rgb(12, 130, 241), rgb(66, 4, 212));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about{
+  padding: 25px;
+}
+
+.about img{
+  height: 30em;
+  border-radius: 2px
+}
+
+.about h1{
+  font-size: 100px;
+}
