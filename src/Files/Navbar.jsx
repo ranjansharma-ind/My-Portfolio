@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./Style.css";
 
 function Navbar() {
+
+  const [show, setShow] = useState(false);
+
+  const offsetValue = -56;
+
+  const toggleoffCanvas = () =>{
+    setShow((show) => !show);
+  };
+
   return (
     <div>
       <nav className="navbar navbar-light bg-transparent">
@@ -23,15 +32,17 @@ function Navbar() {
             className="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasDarkNavbar"
+            show={show}
+            aria-hidden={{toggleoffCanvas}}
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
+                
               </h5>
               <button
                 type="button"
-                className="btn-close btn-close-white"
+                className="btn-close btn-close-black"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -39,7 +50,7 @@ function Navbar() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <NavLink className="nav-link" aria-current="page" to="/">
+                  <NavLink className="nav-link" aria-current="page" to="/" offsetValue={offsetValue}>
                     Home
                   </NavLink>
                 </li>

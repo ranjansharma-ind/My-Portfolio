@@ -11,7 +11,7 @@ function Home() {
         </div>
       </div> */}
       <div className="col-lg-12">
-        <div className="homeText m-5">
+        <div className="homeText mt-5">
           <p>this is me,</p>
           <h1>Ranjan Sharma</h1>
           <p>Web Developer</p>
