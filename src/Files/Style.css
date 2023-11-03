@@ -5,7 +5,9 @@
 
 body{
     font-family: Trebuchet MS;
-    /* background: linear-gradient(165deg, #dd4f4f 54.5%, #fafaf9 55%); */
+    /* background: linear-gradient(165deg, #070707 54.5%, #333330 55%); */
+    background-color: #000;
+    color: #fff;
     background-repeat: no-repeat;
     height: 100vh;
     scroll-behavior: smooth;
@@ -49,7 +51,9 @@ body{
 
 .homeImage img {
   height: 30rem;
-  border-radius: 5px;
+  border-radius: 0px;
+  filter: grayscale(100);
+
 }
 .homeText {
   font-size: 17px;
@@ -67,7 +71,6 @@ body{
 .homeText p{
     line-height: 1.1;
     font-size: 25px;
-    font-weight: 1000;
 }
 .homeText button{
     text-decoration: none;
@@ -79,6 +82,7 @@ body{
     font-size: 15px;
     letter-spacing: 1px;
     transition: 0.7s;
+    border: 1px solid #fff;
 }
 .homeText button:hover{
     background-color: #bdb8b8;

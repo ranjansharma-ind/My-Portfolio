@@ -4,7 +4,7 @@ import "./Style.css";
 
 function Home() {
   return (
-    <div className="row">
+    <div className="row mt-5">
       <div className="col-lg-6 justify-content-center text-align-center align-items-center d-flex">
         <div className="homeImage">
           <img src={Main} alt="Main" />

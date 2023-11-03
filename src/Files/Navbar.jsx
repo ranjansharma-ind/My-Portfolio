@@ -5,9 +5,9 @@ import "./Style.css";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-none">
+      <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/" style={{fontWeight:'bold', fontSize:'25px'}}>
+          <NavLink className="navbar-brand" to="/" style={{fontWeight:'bold', color:'#000'}}>
             Ranjan
           </NavLink>
           <button
@@ -36,7 +36,6 @@ function Navbar() {
                 aria-label="Close"
               ></button>
             </div>
-            <hr/>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
@@ -64,7 +63,6 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <hr/>
     </div>
   );
 }
