@@ -5,7 +5,7 @@
 
 body{
     font-family: Trebuchet MS;
-    background: linear-gradient(165deg, #41c7b4 54.5%, #ff7c4a 55%);
+    /* background: linear-gradient(165deg, #dd4f4f 54.5%, #fafaf9 55%); */
     background-repeat: no-repeat;
     height: 100vh;
     scroll-behavior: smooth;
@@ -48,13 +48,13 @@ body{
 }
 
 .homeImage img {
-  height: 20rem;
-  margin: 50px;
+  height: 30rem;
   border-radius: 5px;
 }
 .homeText {
   font-size: 17px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 .homeText span{
     padding: 1px;
@@ -65,7 +65,9 @@ body{
     font-weight: 1000;
 }
 .homeText p{
-    letter-spacing: 1.5px;
+    line-height: 1.1;
+    font-size: 25px;
+    font-weight: 1000;
 }
 .homeText button{
     text-decoration: none;
