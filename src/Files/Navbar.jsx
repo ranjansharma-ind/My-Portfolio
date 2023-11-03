@@ -7,7 +7,7 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/" style={{fontWeight:'bold', color:'#000'}}>
+          <NavLink className="navbar-brand" to="/" style={{fontWeight:'1000', color:'#000', fontSize:'25px'}}>
             Ranjan
           </NavLink>
           <button
