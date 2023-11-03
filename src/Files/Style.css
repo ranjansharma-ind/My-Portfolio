@@ -3,13 +3,13 @@
   margin: 0;
 }
 
-body{
+/* body{
     font-family: Trebuchet MS;
     background: linear-gradient(165deg, #41c7b4 54.5%, #ff7c4a 55%);
     background-repeat: no-repeat;
     height: 100vh;
     scroll-behavior: smooth;
-}
+} */
 
 .navbar-toggler,
 .navbar-toggler:focus {
