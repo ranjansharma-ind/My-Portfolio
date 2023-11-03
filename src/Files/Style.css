@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 
 * {
   padding: 0;
   margin: 0;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-slider-thumb {
+  background: rgb(238, 9, 9); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
 
 body {
@@ -16,6 +29,10 @@ body {
 .navbar-toggler:focus {
   border: none;
   box-shadow: none;
+}
+
+.navbar {
+  border-radius: 30px;
 }
 
 .navbar-toggler-icon {
@@ -43,20 +60,22 @@ body {
   border-radius: 8.2px;
   background-color: black;
   color: #fff;
+  margin-right: 70px;
 }
 .offcanvas-title {
   font-weight: 100;
 }
 
-.homeImage img {
+/* .homeImage img {
   height: 30rem;
   border-radius: 0px;
   filter: grayscale(100);
-}
+} */
 .homeText {
   font-size: 17px;
   margin-bottom: 10px;
   padding: 20px;
+  /* position: absolute; */
 }
 .homeText span {
   padding: 1px;
@@ -64,7 +83,7 @@ body {
 }
 .homeText h1 {
   /* font-family: Century Gothic; */
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin-top: -5px;
   font-weight: 800;
   font-size: 80px;
@@ -175,4 +194,53 @@ body {
 
 .about h1 {
   font-size: 100px;
+}
+
+
+
+
+
+body {
+  overflow:hidden;
+  background: black;
+}
+
+#canvas {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 5px;
+  font-family: cursive;
+}
+
+.heart {
+  color: red;
+}
+
+.credits a {
+  color: #00a2ff;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
 }
