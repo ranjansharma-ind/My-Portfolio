@@ -20,8 +20,9 @@
 
 body {
   font-family: Century Gothic;
-  /* background: linear-gradient(165deg, #070707 54.5%, #333330 55%); */
-  background-color: #000;
+  background: linear-gradient(60deg, #d67575 5.5%, #885ecc 55%, #d14848);
+  background-repeat: no-repeat;
+  height: 100vh;
   color: #fff;
 }
 
@@ -33,6 +34,16 @@ body {
 
 .navbar {
   border-radius: 30px;
+}
+
+.navbar .navbar-brand{
+  background: -webkit-linear-gradient(60deg, #ff0202, #0206ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  padding: 2px;
+  font-weight: 900;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .navbar-toggler-icon {
@@ -100,7 +111,7 @@ body {
   margin: 3px;
   padding: 8px;
   border: none;
-  background-color: #000;
+  background-color: #d14848;
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
@@ -109,8 +120,8 @@ body {
   font-family: Century Gothic;
 }
 .homeText button:hover {
-  background-color: #bdb8b8;
-  color: #000;
+  background-color: #885ecc;
+  color: #fff;
 }
 
 .whatido h1 {
@@ -198,49 +209,3 @@ body {
 
 
 
-
-
-body {
-  overflow:hidden;
-  background: black;
-}
-
-#canvas {
-  position: fixed;
-  /* top: 0;
-  left: 0; */
-  /* width: 100%;
-  height: 100%; */
-}
-
-
-
-
-
-
-
-
-
-
-
-.credits {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #fff;
-  font-size: 5px;
-  font-family: cursive;
-}
-
-.heart {
-  color: red;
-}
-
-.credits a {
-  color: #00a2ff;
-  text-decoration: none;
-}
-
-.credits a:hover {
-  text-decoration: underline;
-}

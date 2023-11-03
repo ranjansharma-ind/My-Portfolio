@@ -5,10 +5,10 @@ import "./Style.css";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-transparent">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/" style={{fontWeight:'1000', color:'#000', fontSize:'25px'}}>
-            Ranjan
+          <NavLink className="navbar-brand" to="/">
+            portfolio
           </NavLink>
           <button
             className="navbar-toggler"

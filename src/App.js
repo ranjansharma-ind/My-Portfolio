@@ -5,7 +5,6 @@ import About from "./Files/About";
 import WhatiDo from "./Files/WhatiDo";
 import LetsTalk from "./Files/LetsTalk";
 import Error from "./Files/Error";
-import './Files/Style.css';
 
 
 
@@ -13,7 +12,6 @@ function App() {
   
   return (
     <div className="container">
-      <canvas id="canvas"></canvas>
         <BrowserRouter>
           <Navbar />
           <Routes>
