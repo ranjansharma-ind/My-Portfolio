@@ -11,13 +11,15 @@ function Home() {
         </div>
       </div> */}
       <div className="col-lg-12">
-        <div className="homeText">
+        <div className="homeText m-5">
           <p>this is me,</p>
           <h1>Ranjan Sharma</h1>
           <p>Web Developer</p>
           <p>Design - Develop - Branding</p>
-          <button>More About me</button>
-          <button>Hire me</button>
+          <div className="mt-5">
+            <button>More About me</button>
+            <button>Hire me</button>
+          </div>
         </div>
       </div>
     </div>
