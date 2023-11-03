@@ -10,9 +10,9 @@ function Home() {
           <img src={Main} alt="Main" />
         </div>
       </div> */}
-      <div className="col-lg-12 mt-5 justify-content-center text-align-center align-items-center d-flex">
+      <div className="col-lg-12">
         <div className="homeText">
-          <span>This is me,</span>
+          <p>this is me,</p>
           <h1>Ranjan Sharma</h1>
           <p>Web Developer</p>
           <p>Design - Develop - Branding</p>

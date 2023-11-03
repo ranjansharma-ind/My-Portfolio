@@ -4,17 +4,17 @@ import "./Style.css";
 
 function About() {
   return (
-    <div className="row about container d-flex justify-content-center align-items-start ">
+    <div className="row about container">
       <div className="col-lg-6">
         <img src={Image} alt="About" />
       </div>
       <div className="col-lg-6 homeText">
         <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat
-          aliquam ex. Aliquid debitis voluptate sit blanditiis maxime libero,
-          alias incidunt voluptatibus ex corporis possimus sapiente cumque nam
-          praesentium magnam?
+          Hello, I'm Ranjan, a passionate software engineer who thrives on
+          solving complex problems and turning ideas into innovative solutions.<br/>
+          Here's a little more about my background and what drives me in the
+          world of software engineering.
         </p>
         <button>Know more</button>
       </div>
