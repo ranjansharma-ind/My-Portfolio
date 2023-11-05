@@ -23,7 +23,7 @@ function Header(props) {
         expand={false}
       >
         <Container fluid>
-          <Navbar.Brand className="navbar-brand" href="#">
+          <Navbar.Brand className="navbar-brand" to="/">
             {props.title}
           </Navbar.Brand>
           <Navbar.Toggle
@@ -43,7 +43,7 @@ function Header(props) {
               <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="offcanvas-body">
-              <Nav className="justify-content-end flex-grow-1 pe-3 offcanvas--menu offcanvas-body">
+              <Nav className="offcanvas-body">
                 <NavLink
                   activeClass="active"
                   to="/"
@@ -106,3 +106,11 @@ export default Header;
 Header.propTypes = {
   title:PropTypes.string.isRequired
 };
+
+Header.defaultProps = {
+  title: 'Set navbar here',
+  home: 'Set navlink',
+  about: 'Set navlink',
+  contact: 'Set navlink',
+  mywork:'Set navlink'
+}

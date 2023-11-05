@@ -1,69 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Style.css";
-import Design from "./Images/design.png";
-import { useState } from "react";
-import data from "../db.json"
 
 function WhatiDo() {
-  const MyWorks = useState(data)
-  
-  
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/data")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  const [show, setShow] = useState(false);
+  const showOverlay = () => {
+    setShow(true);
+  };
+
+  const hideOverlay = () => {
+    setShow(false);
+  };
   return (
-    <div className="whatido">
-      <h1>Projects</h1>
-      <div class="row d-flex align-items-start">
-        <div
-          class="col -lg-6 nav flex-column nav-pills me-3"
-          id="v-pills-tab"
-          role="tablist"
-          aria-orientation="vertical"
-        >
-          <button
-            class="nav-link active"
-            id="v-pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-home"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true"
-          >
-            {MyWorks.title} 
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-profile"
-            aria-selected="false"
-          >
-            Profile
-          </button>
-        </div>
-        <div class="col-lg-6 tab-content" id="v-pills-tabContent">
+    <div className="whatido row">
+      <h3>projects & gallery</h3>
+      {data.map((data, i) => {
+        return (
           <div
-            class="tab-pane fade show active"
-            id="v-pills-home"
-            role="tabpanel"
-            aria-labelledby="v-pills-home-tab"
-            tabindex="0"
+            className="col-lg-4 image-container justify-content-center d-flex"
+            onMouseOver={showOverlay}
+            onMouseLeave={hideOverlay}
           >
-            <img src={Design} alt="desing" />
+            <img src={data.image} alt="Imag" style={{ height: "400px" }} />
+            {show && (
+              <div className="overlay" key={i}>
+                <h2>{data.title}</h2>
+              </div>
+            )}
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-profile"
-            role="tabpanel"
-            aria-labelledby="v-pills-profile-tab"
-            tabindex="0"
-          >
-            <img src={Design} alt="desing" />
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }

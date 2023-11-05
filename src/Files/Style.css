@@ -43,14 +43,14 @@ body {
   background: -webkit-linear-gradient(60deg, #ff0202, #0206ff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: 25px;
   padding: 2px;
   font-weight: 900;
   /* -webkit-text-fill-color: transparent; */
 }
 
 .navbar-toggler-icon {
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 .offcanvas-body .nav-link {
@@ -78,8 +78,10 @@ body {
 }
 
 .btn-close{
-  font-size: 22px;
-  color: #000;
+  font-size: 20px;
+  box-shadow: none;
+  border: none;
+
 }
 
 /* .homeImage img {
@@ -136,29 +138,49 @@ body {
   color: #fff;
 }
 
-.whatido h1 {
+
+.whatido h3 {
   text-align: center;
-}
-.whatido .nav button {
-  background-color: none;
-  color: #000;
-  margin: 2px;
+  padding: 3px;
 }
 
-.whatido .nav-pills .nav-link.active {
-  background-color: rgb(213, 218, 218);
-  color: #000;
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
 }
 
-.whatido .row {
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
   align-items: center;
 }
 
-.whatido img {
-  height: 400px;
+.overlay:hover {
+  opacity: 1;
 }
+
+.overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 
 .letstalk {
   padding: 20px;

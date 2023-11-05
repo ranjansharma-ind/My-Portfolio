@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Web development",
+      "image": "./Images/Img6.JPG"
+    },
+    {
+      "id": 2,
+      "title": "App development",
+      "image": "./Images/Img2.JPG"
+    },
+    {
+      "id": 3,
+      "title": "IOS development",
+      "image": "./Images/Img3.JPG"
+    }
+  ]
+}

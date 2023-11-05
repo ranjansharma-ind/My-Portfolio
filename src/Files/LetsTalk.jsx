@@ -1,4 +1,3 @@
-import React from "react";
 import "./Style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
