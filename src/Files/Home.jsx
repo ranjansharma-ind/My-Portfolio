@@ -12,13 +12,7 @@ function Home() {
       </div> */}
       <div className="col-lg-12">
         <div className="homeText mt-5">
-          <p>this is me,</p>
-          <h1>Ranjan Sharma</h1>
-          <p>Web Developer</p>
-          <p>Design - Develop - Branding</p>
           <div className="mt-5">
-            <button>More About me</button>
-            <button>Hire me</button>
           </div>
         </div>
       </div>

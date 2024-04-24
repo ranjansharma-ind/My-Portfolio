@@ -20,7 +20,7 @@
 
 body {
   font-family: Century Gothic;
-  background: linear-gradient(60deg, #d67575 5.5%, #885ecc 55%, #d14848);
+  background-color: #B3C8CF;
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
@@ -40,12 +40,12 @@ body {
 }
 
 .navbar .navbar-brand{
-  background: -webkit-linear-gradient(60deg, #ff0202, #0206ff);
+  background: -webkit-linear-gradient(10deg, #090909, #3f3f41);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
   padding: 2px;
-  font-weight: 900;
+  font-weight: 500;
   /* -webkit-text-fill-color: transparent; */
 }
 
