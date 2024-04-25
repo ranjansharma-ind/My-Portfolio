@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Offcanvas, Navbar, Nav } from "react-bootstrap";
+import { Container, Offcanvas, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "./Style.css";
 import PropTypes from 'prop-types';
 
@@ -22,6 +22,7 @@ function Header(props) {
         variant="dark"
         expand={false}
       >
+        <div className="Navbar-canvas"></div>
         <Container fluid>
           <Navbar.Brand className="navbar-brand" to="/">
             {props.title}
@@ -95,6 +96,8 @@ function Header(props) {
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
+
+
         </Container>
       </Navbar>
     </div>
@@ -104,7 +107,7 @@ function Header(props) {
 export default Header;
 
 Header.propTypes = {
-  title:PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 Header.defaultProps = {
@@ -112,5 +115,5 @@ Header.defaultProps = {
   home: 'Set navlink',
   about: 'Set navlink',
   contact: 'Set navlink',
-  mywork:'Set navlink'
+  mywork: 'Set navlink'
 }

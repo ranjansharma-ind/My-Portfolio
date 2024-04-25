@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"); */
 
 * {
   padding: 0;
@@ -20,7 +20,7 @@
 
 body {
   font-family: Century Gothic;
-  background-color: #B3C8CF;
+  background-color: #78A1BB;
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
@@ -39,14 +39,31 @@ body {
   border-radius: 30px;
 }
 
+.Navbar-canvas{
+  content: '';
+  color: #000;
+  border: 2px solid #36415d;
+  height: 50px;
+  width: 50px;
+  fill: none;
+  position: absolute;
+  border-radius: 50px;
+  z-index: 0;
+  overflow: hidden;
+}
+
 .navbar .navbar-brand{
-  background: -webkit-linear-gradient(10deg, #090909, #3f3f41);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 25px;
+  font-size: 40px;
   padding: 2px;
-  font-weight: 500;
-  /* -webkit-text-fill-color: transparent; */
+  font-weight: 1000;
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(to right, #F25757, #F2E863, #61E8E1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
 }
 
 .navbar-toggler-icon {
@@ -90,54 +107,87 @@ body {
   filter: grayscale(100);
 } */
 .homeText {
-  font-size: 17px;
+  font-size: 40px;
   padding: 20px;
-  text-align:center;
-  justify-content: center;
-  align-items: center;
+  text-align:left;
+  justify-content: left;
+  align-items: left;
+  color: #000;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .homeText span {
   padding: 1px;
   font-family: Century Gothic;
 }
-.homeText h1 {
-  text-transform: capitalize;
-  margin-top: -5px;
-  font-weight: 800;
-  font-size: 80px;
-  font-family: Century Gothic;
-}
 
 .homeText p:first-child{
-  font-size: 19px;
   font-family: arial;
-  letter-spacing: 5px;
-  line-height: 0px;
+  letter-spacing: 1px;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .homeText p {
-  line-height: 1.1;
   font-size: 25px;
   font-family: Century Gothic;
   font-weight: 100;
+  margin-bottom: 0;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .homeText button {
   text-decoration: none;
   margin: 3px;
   padding: 8px;
   border: none;
-  background-color: #d14848;
+  background-color: #283044;
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
   transition: 0.7s;
-  border: 1px solid #fff;
-  font-family: Century Gothic;
-}
-.homeText button:hover {
-  background-color: #885ecc;
-  color: #fff;
+  border-radius: 0px;
+  width: 150px;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 50px;
 }
 
+.homeText button:hover{
+  text-decoration: none;
+  background-color: #36415d;
+}
+
+.homeImage{
+  overflow: hidden;
+  z-index: 1;
+}
+
+.res{
+  position:absolute;
+  overflow: hidden;
+  margin-top: 390px;
+  margin-right: 700px;
+}
+
+.Circle{
+  display: flex;
+  font-size: 50px;
+  letter-spacing:10px;
+  width: 90px;
+  margin-top: 90px;
+}
+
+.Circle ul:first-child{
+  color: #F25757;
+}
+
+.Circle ul:last-child{
+  color: #61E8E1;
+}
 
 .whatido h3 {
   text-align: center;
