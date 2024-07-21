@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="container">
         <BrowserRouter>
-          <Navbar title="Ranjan" home="home" about="about" contact="contact" mywork="mywork"/>
+          <Navbar title="Ranjan" home="Portfolio" about="about" contact="contact" mywork="mywork"/>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route path="/About" element={<About />}></Route>

@@ -71,12 +71,16 @@ body {
 }
 
 .offcanvas-body .nav-link {
-  color: #000;
+  color: #fff;
   font-weight: 100;
   margin-left: 50px;
   border-radius: 20px;
   text-align: center;
   font-weight: 500;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
 }
 
 /* .offcanvas-body .nav-link.active {
@@ -84,8 +88,12 @@ body {
   color: #fff;
 } */
 
+.PersonalImage{
+  border-radius: 50%;
+}
+
 .offcanvas {
-  background-color: #fff;
+  background-color: #36415d;
   color: #000;
   font-size: 30px;
   line-height: 90px;
@@ -93,6 +101,7 @@ body {
 .offcanvas-title {
   font-weight: 100;
 }
+
 
 .btn-close{
   font-size: 20px;

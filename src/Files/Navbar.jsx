@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Offcanvas, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Offcanvas, Navbar, Nav } from "react-bootstrap";
 import "./Style.css";
 import PropTypes from 'prop-types';
+import Personal from "./Images/Main.jpg"
 
 function Header(props) {
   const [show, setShow] = useState(false);
 
-  const offsetValue = -56;
+  const offsetValue = -30;
 
   const toggleOffCanvas = () => {
     setShow((show) => !show);
@@ -45,6 +46,19 @@ function Header(props) {
             </Offcanvas.Header>
             <Offcanvas.Body className="offcanvas-body">
               <Nav className="offcanvas-body">
+              <NavLink
+                  activeClass="active"
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={offsetValue}
+                  duration={500}
+                  className="nav-link"
+                  onClick={toggleOffCanvas}
+                >
+                  <img src={Personal} height={100} className="PersonalImage"/>
+                  
+                </NavLink>
                 <NavLink
                   activeClass="active"
                   to="/"
